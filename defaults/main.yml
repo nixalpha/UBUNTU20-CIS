@@ -750,6 +750,12 @@ ubtu20cis_sgid_adjust: false
 # ubtu20cis_passwd_label: "{{ (this_item | default(item)).id }}: {{ (this_item | default(item)).dir }}"
 ubtu20cis_passwd_label: "{{ (this_item | default(item)).id }}: {{ (this_item | default(item)).dir }}"
 
+## Control 6.2.7
+# This variable is a toggle foe enabling/disabling the automated modification of
+# permissions on dot files.
+# Possible values are `true` and `false`.
+ubtu20cis_dotperm_ansiblemanaged: true
+
 #### Audit Configuration Settings ####
 
 ### Audit binary settings ###
