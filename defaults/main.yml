@@ -500,6 +500,16 @@ ubtu20cis_disable_dynamic_motd: true
 ubtu20cis_warning_banner: |
         Authorized uses only. All activity may be monitored and reported.
 
+## Controls 1.8.x - Settings for GDM
+# This variable specifies the GNOME configuration database file to which configurations are written.
+# (See https://help.gnome.org/admin/system-admin-guide/stable/dconf-keyfiles.html.en)
+# The default database is `session`.
+ubtu20cis_dconf_db_name: session
+# This variable governs the number of seconds of inactivity before the screen goes blank.
+ubtu20cis_screensaver_idle_delay: 900
+# This variable governs the number of seconds the screen remains blank before it is locked.
+ubtu20cis_screensaver_lock_delay: 5
+
 # Section 2 Control Variables
 # Control 2.1.1.1
 # ubtu20cis_time_sync_tool is the tool in which to synchronize time

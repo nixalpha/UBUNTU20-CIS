@@ -44,6 +44,10 @@
   ansible.builtin.shell: dpkg-reconfigure gdm3
   failed_when: false
 
+- name: Update dconf
+  ansible.builtin.shell: dconf update
+  failed_when: false
+
 - name: restart postfix
   ansible.builtin.systemd:
       name: postfix
