@@ -198,6 +198,7 @@
       - /sbin/augenrules p+i+n+u+g+s+b+acl+xattrs+sha512
   when:
       - ubtu20cis_rule_5_2_4_11
+      - ubtu20cis_config_aide 
   tags:
       - level2-server
       - level2-workstation
